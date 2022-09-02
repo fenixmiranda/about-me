@@ -5,7 +5,7 @@
     --green: #15cdcb;
     --bg--dark: #212226;
     --light-grey: #e0dede;
-    --menu-height: 75px
+    --menu-height: 65px
 }
 
 * {
@@ -60,6 +60,11 @@ header .container {
     padding: 0 100px;
 }
 
+header .container img{
+    display: none;
+    height: 45px;
+}
+
 header .container h1 {
     color: var(--green);
 }
@@ -87,10 +92,69 @@ nav img {
     height: 45px;
 }
 
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a {
     font-size: 24px;
     color: var(--green);
     text-decoration: none;
-    margin: 0 35px;
 }
 
+/********************
+****** RESPONSIVIDADE
+***********************/
+/* slow desktop */
+
+@media (max-width: 1000px) {
+    header .container{
+        width: 100%;
+    }
+      
+    nav {
+        padding: 0 30px;
+    }
+
+    nav ul a {
+        font-size: 18px;
+    }
+
+}
+
+/* tablet */
+
+@media (max-width:767px) {
+    
+
+    header .container img {
+        display: inline;
+        margin-bottom: 5px;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul a {
+        font-size: 16px;
+    }
+}
+
+/* celular */
+
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+}
