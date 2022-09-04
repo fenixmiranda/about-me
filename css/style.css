@@ -205,8 +205,13 @@ nav ul a svg {
 .portfolio {
     padding: 0 100px;
     margin-bottom: 100px;
+    height: 800px;
     text-align: center;
     background: url(../assets/portfolio-bg.png);
+}
+
+.portfolio .portfolio-container{
+    margin-top: 130px;
 }
 
 .portfolio .portfolio-container .portfolio-card {
@@ -223,10 +228,24 @@ nav ul a svg {
 
 .portfolio .portfolio-container .portfolio-card .img-container {
     margin: 0 25px 50px;
+    position: relative;
 }
 
 .portfolio .portfolio-container .portfolio-card .img-container img {
     width: 100%;
+}
+
+.portfolio-container .portfolio-card .img-container .line {
+    
+        width: calc(100% + 30px);
+        height: calc(100% + 15px);
+        border: 1px solid var(--green);
+        border-radius: 16px;
+        transform: rotate(-1.93deg);
+        position: absolute;
+        top: -12px;
+        left: calc(50% - 100%/2 - 14px);
+    
 }
 
 .portfolio .portfolio-container .portfolio-card .language-container {
@@ -303,7 +322,7 @@ p {
         margin: 70px 0;
     }
 
-    .services {
+    .services, .portfolio {
         padding: 0;
     }
 
@@ -311,16 +330,21 @@ p {
         height: 394px;
     }
 
-    .services .services-coutainer {
+    .services .services-coutainer, .portfolio .portfolio-container {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
 
-    .service-card + .service-card {
+    .service-card + .service-card, .portfolio-card + .portfolio-card {
         margin-left: 0;
         margin-top: 20px;
     }
+
+    .portfolio {
+        height: 100%;
+    }
+
 }
 
 /* tablet */
@@ -353,6 +377,10 @@ p {
 /* celular */
 
 @media (max-width: 480px) {
+    body {
+        margin-bottom: calc(var(--menu-height) + 50px);
+    }
+    
     header .container {
         padding: 0 40px;
     }
@@ -383,7 +411,16 @@ p {
         margin: 70px 0;
     }
 
-    .services .services-coutainer {
+    .services .services-coutainer, .portfolio .portfolio-container {
         padding: 0 20px;
     }
+
+    .portfolio .portfolio-container {
+        margin-top: 70px;
+    }
+
+    .portfolio {
+        margin: 100px 0 50px;
+    }
+
 }
