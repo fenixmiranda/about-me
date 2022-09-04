@@ -43,7 +43,7 @@ button {
     font-weight: bold;
     font-size: 18px;
     color: white;
-    
+    cursor: pointer;
 }
 
 .secondary-button {
@@ -54,6 +54,7 @@ button {
     height: 80px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .secondary-button img {
@@ -110,7 +111,7 @@ nav {
     background: var(--bg--dark);
     position: sticky;
     top: 0;
-
+    
     z-index: 99;
 }
 
@@ -325,13 +326,47 @@ p {
 }
 
 /********************
+****** CONTACT
+***********************/
+
+.contact {
+    max-width: 700px;
+    margin: 150px auto 70px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact h1 {
+    width: fit-content;
+    margin: 0 auto 40px;
+    background: -webkit-linear-gradient(#15cdcb, #5280e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact button {
+    margin: 40px auto;
+    cursor: pointer;
+}
+
+.contact .social-media {
+    max-width: 360px;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/********************
 ****** FOOTER
 ***********************/
 
 .footer {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
     font-size: 12px;
+    color: var(--light-grey);
 }
 
 /********************
@@ -413,6 +448,7 @@ p {
     header .container img {
         display: inline;
         margin-bottom: 5px;
+        margin-top: 50px;
     }
 
     nav {
