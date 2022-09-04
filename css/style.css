@@ -164,6 +164,11 @@ nav ul a svg {
 
     nav {
         padding: 0 15px;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+        top: unset;
+
     }
 
     nav ul a {
