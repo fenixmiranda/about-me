@@ -6,6 +6,7 @@
     --bg--dark: #212226;
     --light-grey: #e0dede;
     --menu-height: 65px
+    --medium-grey: #2F3034;
 }
 
 * {
@@ -42,6 +43,20 @@ button {
     font-weight: bold;
     font-size: 18px;
     color: white;
+}
+
+.secondary-button {
+    background: var(--medium-grey);
+    border: 1px solid var(--purple);
+    color: var(--green);
+    font-weight: bold;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.secundary-button img {
+    margin-right: 15px;
 }
 
 .title-purple {
@@ -275,6 +290,36 @@ nav ul a svg {
 
 p {
     margin: 0;
+}
+
+/********************
+****** Currículo
+***********************/
+
+.curriculum {
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculum .container {
+    display: flex;
+    margin: 50px 0;
+}
+
+.curriculum .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.curriculum .container .content .curriculum-info {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1rem;
+    margin-bottom: 50px;
 }
 
 /********************
