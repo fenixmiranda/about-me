@@ -23,6 +23,10 @@ html, body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 body, button, input, select, textarea {
     font-family: 'Poppins', sans-serif;
 }
@@ -428,6 +432,10 @@ p {
         margin-top: 20px;
     }
 
+    .portfolio .portfolio-container .portfolio-card{
+        margin-bottom: 2rem;
+    }
+
     .portfolio {
         height: 100%;
     }
@@ -517,7 +525,7 @@ p {
     .portfolio .portfolio-container {
         margin-top: 70px;
     }
-
+    
     .portfolio {
         margin: 100px 0 50px;
     }
